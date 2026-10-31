@@ -3,7 +3,7 @@ class ApiEndpoints {
 
   static const baseUrl = String.fromEnvironment(
     'API_BASE_URL',
-    defaultValue: 'https://credit-sea-assignment-nikhil-yadav.onrender.com/api',
+    defaultValue: 'https://credit-sea-assignment-nikhil-yadav-1.onrender.com/api',
   );
 
   static const sendOtp = '/auth/send-otp';

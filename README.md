@@ -79,7 +79,7 @@ flutter pub get
 flutter run
 ```
 
-The app talks to the deployed API at `https://credit-sea-assignment-nikhil-yadav.onrender.com/api` by default. To use a server on your own computer from the Android emulator, run `flutter run --dart-define=API_BASE_URL=http://10.0.2.2:4000/api`.
+The app talks to the deployed API at `https://credit-sea-assignment-nikhil-yadav-1.onrender.com/api` by default. To use a server on your own computer from the Android emulator, run `flutter run --dart-define=API_BASE_URL=http://10.0.2.2:4000/api`.
 
 Push notifications need `android/app/google-services.json` from your Firebase project. Without that file the app builds and runs normally, it just has no push.
 
