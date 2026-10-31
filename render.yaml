@@ -12,7 +12,7 @@ services:
       - key: OTP_MODE
         value: mock
       - key: STAGE_SECONDS
-        value: "8"
+        value: "2"
       - key: MONGODB_URI
         sync: false
       - key: JWT_SECRET

@@ -2,7 +2,7 @@ const LoanApplication = require('../models/LoanApplication');
 const User = require('../models/User');
 const loanService = require('./loanService');
 
-const INTERVAL_MS = 2000;
+const INTERVAL_MS = 1000;
 
 async function tick() {
   const open = await LoanApplication.find({ status: { $nin: ['REJECTED', 'DISBURSED'] } });

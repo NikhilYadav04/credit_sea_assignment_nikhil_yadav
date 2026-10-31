@@ -113,7 +113,7 @@ All responses look like `{ success, message, data }`.
 
 ## Things to know
 
-- **No real back office.** Nobody reviews applications, so a background job on the server (`loanProgressJob`, every 2 seconds) moves each open application forward every `STAGE_SECONDS` and sends a push notification at each change, even when the app is closed. The approval decision re-runs the eligibility rules. On a free host that sleeps when idle, the job only runs while the server is awake. `PATCH /loan/applications/:id/status` can set a status by hand.
+- **No real back office.** Nobody reviews applications, so a background job on the server (`loanProgressJob`, every second) moves each open application forward every `STAGE_SECONDS` and sends a push notification at each change, even when the app is closed. The approval decision re-runs the eligibility rules. On a free host that sleeps when idle, the job only runs while the server is awake. `PATCH /loan/applications/:id/status` can set a status by hand.
 - **No real SMS.** In `mock` mode the OTP is returned by the API and shown in a snackbar in the app, so the flow can be demoed. Plug an SMS provider into `otpService.deliver` for production.
 - **PAN verification** only checks the format and that no other account uses it.
 - The Android manifest allows cleartext HTTP so the emulator can reach a local server. Remove `usesCleartextTraffic` if you only talk to an HTTPS server.

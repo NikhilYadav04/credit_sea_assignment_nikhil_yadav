@@ -12,7 +12,7 @@ import 'repayment_controller.dart';
 class ApplicationStatusController extends BaseController {
   ApplicationStatusController(this._loans, this.repayment);
 
-  static const _pollInterval = Duration(seconds: 3);
+  static const _pollInterval = Duration(seconds: 1);
 
   final LoanRepository _loans;
   final RepaymentController repayment;

@@ -8,7 +8,7 @@ const env = {
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '30d',
   adminKey: process.env.ADMIN_KEY || '',
   otpMode: process.env.OTP_MODE || 'mock',
-  stageSeconds: Number(process.env.STAGE_SECONDS) || 8,
+  stageSeconds: Number(process.env.STAGE_SECONDS) || 2,
   razorpay: {
     keyId: process.env.RAZORPAY_KEY_ID || '',
     keySecret: process.env.RAZORPAY_KEY_SECRET || '',
